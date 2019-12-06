@@ -1,3 +1,5 @@
-FROM ruby:2.5.5-alpine3.9
-
-RUN touch test.txt
+FROM node:10-alpine
+ 
+ENV APP_ROOT /usr/src/app/
+ 
+WORKDIR $APP_ROOT
